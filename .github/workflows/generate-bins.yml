@@ -2,8 +2,7 @@ name: Generate Buckinghamshire bins ICS
 
 on:
   schedule:
-    # Every Monday at 09:00 London time
-    - cron: "0 9 * * 1"
+    - cron: "0 9 * * 1"   # Mondays 09:00 UK (UTC in winter; adjust if you like)
   workflow_dispatch: {}
 
 jobs:
@@ -19,32 +18,70 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Chrome for Testing (works reliably in Actions)
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Show Chrome version
+        run: |
+          echo "Chrome path: $CHROME_PATH"
+          $CHROME_PATH --version
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install Python deps
         run: |
-          sudo apt-get update
-          sudo apt-get install -y chromium-browser
           python -m pip install --upgrade pip
-          python -m pip install pandas holidays requests icalendar beautifulsoup4 lxml selenium webdriver-manager
+          # cryptography as a wheel to avoid building from source
+          python -m pip install --only-binary=:all: cryptography
+          python -m pip install \
+            pandas holidays requests icalendar beautifulsoup4 lxml \
+            selenium webdriver-manager cffi
           git clone https://github.com/robbrad/UKBinCollectionData.git ukbcd
 
-      - name: Run scraper to collect Bucks bin data
+      - name: Collect JSON (Bucks)
         working-directory: ukbcd
+        env:
+          CHROME_BINARY: ${{ env.CHROME_PATH }}
         run: |
-          python -m uk_bin_collection.uk_bin_collection.collect_data "$COUNCIL" "$SOURCE_URL" -u "$UPRN" --headless -w chrome > ../bucks.json
+          python - <<'PY'
+          import os, sys, subprocess, json, textwrap
+          cmd = [
+              sys.executable, "-m", "uk_bin_collection.uk_bin_collection.collect_data",
+              os.environ.get("COUNCIL", "BuckinghamshireCouncil"),
+              os.environ.get("SOURCE_URL"),
+              "-u", os.environ.get("UPRN"),
+              "--headless", "-w", "chrome"
+          ]
+          print("Running:", " ".join(cmd), flush=True)
+          # Helpful flags for Chrome in CI
+          os.environ["SE_OPTIONS"] = "--no-sandbox --disable-dev-shm-usage --disable-gpu --remote-allow-origins=*"
+          out = subprocess.run(cmd, capture_output=True, text=True)
+          if out.stderr:
+              print(out.stderr)
+          open("../bucks.json", "w", encoding="utf-8").write(out.stdout)
+          if not out.stdout.strip():
+              print("ERROR: Collector produced no output", file=sys.stderr)
+              sys.exit(1)
+          PY
           test -s ../bucks.json
+          echo "First lines of bucks.json:"
+          head -n 30 ../bucks.json
 
-      - name: Convert JSON to ICS
+      - name: Build ICS from JSON
         working-directory: ukbcd
         run: |
           python bin_to_ics.py --input ../bucks.json --output ../bins.ics --name "$CAL_NAME"
           test -s ../bins.ics
+          echo "First lines of bins.ics:"
+          head -n 30 ../bins.ics
 
-      - name: Prepare web output
+      - name: Prepare site (gh-pages)
         run: |
           mkdir -p public
           cp bins.ics public/
