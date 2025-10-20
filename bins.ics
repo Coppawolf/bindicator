@@ -8,7 +8,7 @@ SUMMARY:Bin Collection: Food waste\, Mixed recycling\, Paper and cardboard
  \, Textiles/Batteries/Electricals
 DTSTART;VALUE=DATE:20251023
 DTEND;VALUE=DATE:20251024
-UID:bin-collection-2025-10-23-0644@ukbincollection
+UID:bin-collection-2025-10-23-4347@ukbincollection
 DESCRIPTION:Collection for: Food waste\, Mixed recycling\, Paper and cardb
  oard\, Textiles/Batteries/Electricals
 END:VEVENT
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:Bin Collection: General waste
 DTSTART;VALUE=DATE:20251030
 DTEND;VALUE=DATE:20251031
-UID:bin-collection-2025-10-30-3652@ukbincollection
+UID:bin-collection-2025-10-30-8368@ukbincollection
 DESCRIPTION:Collection for: General waste
 END:VEVENT
 END:VCALENDAR
