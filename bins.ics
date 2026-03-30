@@ -4,12 +4,25 @@ PRODID:-//UK Bin Collection Data//bin_to_ics.py//EN
 NAME:Buckinghamshire Bins
 X-WR-CALNAME:Buckinghamshire Bins
 BEGIN:VEVENT
-SUMMARY:Bin Collection: Food waste\, Mixed recycling\, Paper and cardboard
- \, Textiles/Batteries/Electricals
-DTSTART;VALUE=DATE:20260326
-DTEND;VALUE=DATE:20260327
-UID:bin-collection-2026-03-26-5424@ukbincollection
-DESCRIPTION:Collection for: Food waste\, Mixed recycling\, Paper and cardb
- oard\, Textiles/Batteries/Electricals
+SUMMARY:Bin Collection: Food waste (Visit our waste pages for Easter colle
+ ction changes)
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+UID:bin-collection-2026-04-02-5477@ukbincollection
+DESCRIPTION:Collection for: Food waste (Visit our waste pages for Easter c
+ ollection changes)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bin Collection: Mixed recycling (Visit our waste pages for Easter 
+ collection changes)\, Paper and cardboard (Visit our waste pages for Easte
+ r collection changes)\, Textiles/Batteries/Electricals (Visit our waste pa
+ ges for Easter collection changes)
+DTSTART;VALUE=DATE:20260409
+DTEND;VALUE=DATE:20260410
+UID:bin-collection-2026-04-09-3837@ukbincollection
+DESCRIPTION:Collection for: Mixed recycling (Visit our waste pages for Eas
+ ter collection changes)\, Paper and cardboard (Visit our waste pages for E
+ aster collection changes)\, Textiles/Batteries/Electricals (Visit our wast
+ e pages for Easter collection changes)
 END:VEVENT
 END:VCALENDAR
