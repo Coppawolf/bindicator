@@ -5,24 +5,26 @@ NAME:Buckinghamshire Bins
 X-WR-CALNAME:Buckinghamshire Bins
 BEGIN:VEVENT
 SUMMARY:Bin Collection: Food waste (Visit our waste pages for Easter colle
- ction changes)
-DTSTART;VALUE=DATE:20260402
-DTEND;VALUE=DATE:20260403
-UID:bin-collection-2026-04-02-5477@ukbincollection
-DESCRIPTION:Collection for: Food waste (Visit our waste pages for Easter c
- ollection changes)
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Bin Collection: Mixed recycling (Visit our waste pages for Easter 
- collection changes)\, Paper and cardboard (Visit our waste pages for Easte
- r collection changes)\, Textiles/Batteries/Electricals (Visit our waste pa
- ges for Easter collection changes)
+ ction changes)\, Mixed recycling (Visit our waste pages for Easter collect
+ ion changes)\, Paper and cardboard (Visit our waste pages for Easter colle
+ ction changes)\, Textiles/Batteries/Electricals (Visit our waste pages for
+  Easter collection changes)
 DTSTART;VALUE=DATE:20260409
 DTEND;VALUE=DATE:20260410
-UID:bin-collection-2026-04-09-3837@ukbincollection
-DESCRIPTION:Collection for: Mixed recycling (Visit our waste pages for Eas
- ter collection changes)\, Paper and cardboard (Visit our waste pages for E
- aster collection changes)\, Textiles/Batteries/Electricals (Visit our wast
- e pages for Easter collection changes)
+UID:bin-collection-2026-04-09-4129@ukbincollection
+DESCRIPTION:Collection for: Food waste (Visit our waste pages for Easter c
+ ollection changes)\, Mixed recycling (Visit our waste pages for Easter col
+ lection changes)\, Paper and cardboard (Visit our waste pages for Easter c
+ ollection changes)\, Textiles/Batteries/Electricals (Visit our waste pages
+  for Easter collection changes)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bin Collection: General waste (Visit our waste pages for Easter co
+ llection changes)
+DTSTART;VALUE=DATE:20260416
+DTEND;VALUE=DATE:20260417
+UID:bin-collection-2026-04-16-7462@ukbincollection
+DESCRIPTION:Collection for: General waste (Visit our waste pages for Easte
+ r collection changes)
 END:VEVENT
 END:VCALENDAR
