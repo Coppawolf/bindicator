@@ -4,19 +4,27 @@ PRODID:-//UK Bin Collection Data//bin_to_ics.py//EN
 NAME:Buckinghamshire Bins
 X-WR-CALNAME:Buckinghamshire Bins
 BEGIN:VEVENT
-SUMMARY:Bin Collection: Food waste\, General waste
-DTSTART;VALUE=DATE:20260430
-DTEND;VALUE=DATE:20260501
-UID:bin-collection-2026-04-30-8140@ukbincollection
-DESCRIPTION:Collection for: Food waste\, General waste
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Bin Collection: Mixed recycling\, Paper and cardboard\, Textiles/B
- atteries/Electricals
+SUMMARY:Bin Collection: Food waste (Visit our waste pages for changes foll
+ owing the bank holiday)\, Mixed recycling (Visit our waste pages for chang
+ es following the bank holiday)\, Paper and cardboard (Visit our waste page
+ s for changes following the bank holiday)\, Textiles/Batteries/Electricals
+  (Visit our waste pages for changes following the bank holiday)
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260508
-UID:bin-collection-2026-05-07-0209@ukbincollection
-DESCRIPTION:Collection for: Mixed recycling\, Paper and cardboard\, Textil
- es/Batteries/Electricals
+UID:bin-collection-2026-05-07-2608@ukbincollection
+DESCRIPTION:Collection for: Food waste (Visit our waste pages for changes 
+ following the bank holiday)\, Mixed recycling (Visit our waste pages for c
+ hanges following the bank holiday)\, Paper and cardboard (Visit our waste 
+ pages for changes following the bank holiday)\, Textiles/Batteries/Electri
+ cals (Visit our waste pages for changes following the bank holiday)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bin Collection: General waste (Visit our waste pages for changes f
+ ollowing the bank holiday)
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
+UID:bin-collection-2026-05-14-8736@ukbincollection
+DESCRIPTION:Collection for: General waste (Visit our waste pages for chang
+ es following the bank holiday)
 END:VEVENT
 END:VCALENDAR
