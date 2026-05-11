@@ -5,26 +5,26 @@ NAME:Buckinghamshire Bins
 X-WR-CALNAME:Buckinghamshire Bins
 BEGIN:VEVENT
 SUMMARY:Bin Collection: Food waste (Visit our waste pages for changes foll
- owing the bank holiday)\, Mixed recycling (Visit our waste pages for chang
- es following the bank holiday)\, Paper and cardboard (Visit our waste page
- s for changes following the bank holiday)\, Textiles/Batteries/Electricals
-  (Visit our waste pages for changes following the bank holiday)
-DTSTART;VALUE=DATE:20260507
-DTEND;VALUE=DATE:20260508
-UID:bin-collection-2026-05-07-2608@ukbincollection
-DESCRIPTION:Collection for: Food waste (Visit our waste pages for changes 
- following the bank holiday)\, Mixed recycling (Visit our waste pages for c
- hanges following the bank holiday)\, Paper and cardboard (Visit our waste 
- pages for changes following the bank holiday)\, Textiles/Batteries/Electri
- cals (Visit our waste pages for changes following the bank holiday)
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Bin Collection: General waste (Visit our waste pages for changes f
- ollowing the bank holiday)
+ owing the bank holiday)\, General waste (Visit our waste pages for changes
+  following the bank holiday)
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260515
-UID:bin-collection-2026-05-14-8736@ukbincollection
-DESCRIPTION:Collection for: General waste (Visit our waste pages for chang
- es following the bank holiday)
+UID:bin-collection-2026-05-14-0341@ukbincollection
+DESCRIPTION:Collection for: Food waste (Visit our waste pages for changes 
+ following the bank holiday)\, General waste (Visit our waste pages for cha
+ nges following the bank holiday)
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bin Collection: Mixed recycling (Visit our waste pages for changes
+  following the bank holiday)\, Paper and cardboard (Visit our waste pages 
+ for changes following the bank holiday)\, Textiles/Batteries/Electricals (
+ Visit our waste pages for changes following the bank holiday)
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+UID:bin-collection-2026-05-21-8187@ukbincollection
+DESCRIPTION:Collection for: Mixed recycling (Visit our waste pages for cha
+ nges following the bank holiday)\, Paper and cardboard (Visit our waste pa
+ ges for changes following the bank holiday)\, Textiles/Batteries/Electrica
+ ls (Visit our waste pages for changes following the bank holiday)
 END:VEVENT
 END:VCALENDAR
