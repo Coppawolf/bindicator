@@ -4,19 +4,21 @@ PRODID:-//UK Bin Collection Data//bin_to_ics.py//EN
 NAME:Buckinghamshire Bins
 X-WR-CALNAME:Buckinghamshire Bins
 BEGIN:VEVENT
-SUMMARY:Bin Collection: Food waste\, General waste
-DTSTART;VALUE=DATE:20261001
-DTEND;VALUE=DATE:20261002
-UID:bin-collection-2026-10-01-1344@ukbincollection
-DESCRIPTION:Collection for: Food waste\, General waste
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Bin Collection: Mixed recycling\, Paper and cardboard recycling\, 
- Small household electricals\, batteries and textiles\, Garden waste
+SUMMARY:Bin Collection: Food waste\, Mixed recycling\, Paper and cardboard
+  recycling\, Small household electricals\, batteries and textiles\, Garden
+  waste
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
-UID:bin-collection-2026-10-08-6016@ukbincollection
-DESCRIPTION:Collection for: Mixed recycling\, Paper and cardboard recyclin
- g\, Small household electricals\, batteries and textiles\, Garden waste
+UID:bin-collection-2026-10-08-1994@ukbincollection
+DESCRIPTION:Collection for: Food waste\, Mixed recycling\, Paper and cardb
+ oard recycling\, Small household electricals\, batteries and textiles\, Ga
+ rden waste
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bin Collection: General waste
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+UID:bin-collection-2026-10-15-9304@ukbincollection
+DESCRIPTION:Collection for: General waste
 END:VEVENT
 END:VCALENDAR
